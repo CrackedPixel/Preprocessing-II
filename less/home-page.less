@@ -2,8 +2,11 @@
   cursor: default;
   .fadeInAnim(~"4s");
   .noselect();
-  @media @mobileView{
+  @media @800View{
     padding: 0 2rem 0 2rem;
+  }
+  @media @mobileView{
+    // padding: 0 2rem 0 2rem;
   }
   header{
       width: 100%;
@@ -37,7 +40,7 @@
       }
     }
 
-    @media @mobileView{
+    @media @600View{
       flex-flow: column nowrap;
       .img-content{
         width: 100%;
@@ -62,7 +65,7 @@
       padding-left: 0;
     }
 
-    @media @mobileView{
+    @media @600View{
       .img-content{
         order: 1;
       }
@@ -91,15 +94,22 @@
     .btn{
       .btnClass(@white, ~"2rem", ~"4rem", @button-bg);
     }
-
-    @media @mobileView{
+    @media @sevenView{
       flex-flow: column nowrap;
       align-items: center;
       .destination{
-        width: 70%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
       }
       .btn{
         width: 100%;
+      }
+    }
+    @media @mobileView{
+      .btn{
+        width: 100%;
+        margin-right: 0;
       }
     }
   }
