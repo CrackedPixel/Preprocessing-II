@@ -484,3 +484,26 @@ nav a:hover {
     margin-right: 0;
   }
 }
+.popupContainer {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(109, 102, 102, 0.4);
+  z-index: 990;
+}
+.popupContainer .popupMain {
+  z-index: 991;
+}
+input[type=checkbox] {
+  display: none;
+}
+#puso:checked + .popupContainer {
+  display: flex;
+}
+#pusc:checked + .popupTitle {
+  display: none;
+}
