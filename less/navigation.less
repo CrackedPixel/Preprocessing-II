@@ -1,21 +1,30 @@
 // Navigation Styles here
-header{
-    width: 100%;
-    border-bottom: 2px dashed silver;
-    font-weight: bold;
-    .homeContainer{
-        max-width: 800px;
-        margin: 1.5rem auto 3rem auto;
+.navContainer{
+    max-width: 800px;
+    margin: 1.5rem auto 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: bold;   
+    @media @mobileView{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+nav{
+    @media @mobileView{
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 2rem;
     }
-    nav a{
-        text-decoration: none;
-        color: black;
-        margin-right: 3rem;
-        font-size: 1.5rem;
-        &:hover{ text-decoration: underline; }
-    }
-    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    &:hover{ text-decoration: underline; }
 }
