@@ -1,6 +1,6 @@
 .home {
   cursor: default;
-  .fadeInAnim(~"4s");
+  // .fadeInAnim(~"2s");
   .noselect();
   @media @800View{
     padding: 0 2rem 0 2rem;
@@ -10,6 +10,7 @@
   }
   header{
       width: 100%;
+      .fadeInAnim(~"1s");
       .fakeBar{
         width: 100%;
         border-bottom: 2px dashed silver;
@@ -19,9 +20,19 @@
       }
   }
   .mainImg{
+    .fadeInAnim(~"2s");
     margin-top:2px;
   }
   .content-section {
+    &:nth-of-type(1){
+      .fadeInAnim(~"4s");
+    }
+    &:nth-of-type(2){
+      .fadeInAnim(~"7s");
+    }
+    &:nth-of-type(3){
+      .fadeInAnim(~"10s");
+    }
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +86,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 3rem;
-
+    .fadeInAnim(~"11s");
     img {
       border-radius: 10px;
     }
@@ -86,7 +97,7 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    .fadeInAnim(~"12s");
     .destination {
       width: 30%;
       margin-bottom: 3rem;
