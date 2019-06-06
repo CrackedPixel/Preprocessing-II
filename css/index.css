@@ -392,6 +392,9 @@ nav a:hover {
   .home .content-section .text-content {
     width: 100%;
   }
+  .home .content-section img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 3rem;
